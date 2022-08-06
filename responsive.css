@@ -1,0 +1,291 @@
+/* responsive */
+
+@media (min-width: 1360px) {
+  .wrapper {
+    width: 1100px;
+  }
+
+  .header {
+    width: 1100px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1360px) {
+  .wrapper {
+    width: 1000px;
+  }
+
+  .header {
+    width: 1000px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .container-top {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(auto, auto) minmax(auto, 355px);
+    grid-template-rows: minmax(auto, auto) minmax(auto, 252px);
+    column-gap: 20px;
+    grid-template-areas:
+      "aa aa bb"
+      "cc cc bb";
+  }
+
+  .sidebar-1 {
+    grid-area: bb;
+    width: auto;
+    height: auto;
+  }
+
+  .content {
+    grid-area: aa;
+  }
+
+  .content-desc,
+  .content-list {
+    display: none;
+  }
+
+  .sidebar-2 {
+    overflow: hidden;
+    grid-area: cc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sidebar-2-item {
+    max-width: 252px;
+  }
+
+  .sidebar-2-item:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  .article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr minmax(auto, auto) minmax(auto, auto);
+    column-gap: 20px;
+    grid-template-areas:
+      "aa aa "
+      "bb cc "
+      "dd ee ";
+  }
+
+  .article-item {
+    height: auto;
+    width: 100%;
+  }
+
+  .article-item img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  .article-item-1 img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .widget {
+    display: none;
+  }
+
+  .navbar-item:not(:first-child) {
+    display: none;
+  }
+
+  .container-top {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(auto, auto);
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
+    column-gap: 20px;
+    grid-template-areas:
+      "aa"
+      "cc"
+      "bb";
+  }
+
+  .sidebar-1 {
+    grid-area: bb;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .content {
+    grid-area: aa;
+  }
+
+  .content-desc,
+  .content-list {
+    display: none;
+  }
+
+  .sidebar-2 {
+    overflow: hidden;
+    grid-area: cc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sidebar-2-item:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  .article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr minmax(auto, auto) minmax(auto, auto);
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    column-gap: 20px;
+    grid-template-areas:
+      "aa aa "
+      "bb cc "
+      "dd ee ";
+  }
+
+  .article-item {
+    height: auto;
+    width: 100%;
+  }
+
+  .article-item img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  .article-item-1 img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 499px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .widget {
+    display: none;
+  }
+
+  .navbar-item:not(:first-child) {
+    display: none;
+  }
+
+  .container-top {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(auto, auto);
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
+    column-gap: 20px;
+    grid-template-areas:
+      "aa"
+      "cc"
+      "bb";
+  }
+
+  .sidebar-1 {
+    grid-area: bb;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .content {
+    grid-area: aa;
+  }
+
+  .content-desc,
+  .content-list {
+    display: none;
+  }
+
+  .sidebar-2 {
+    overflow: hidden;
+    grid-area: cc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sidebar-2-item:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  .article {
+    display: grid;
+    grid-template-columns: minmax(auto, auto);
+    grid-template-rows: repeat(5, minmax(auto, auto));
+    column-gap: 20px;
+    grid-template-areas:
+      "aa"
+      "bb"
+      "cc"
+      "dd"
+      "ee";
+  }
+
+  .article-item {
+    height: auto;
+    width: 100%;
+  }
+
+  .article-item img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  .article-item-1 img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
